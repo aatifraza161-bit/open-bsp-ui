@@ -22,7 +22,7 @@ function Login() {
     await supabase.auth.signInWithOAuth({
       provider,
       options: {
-        redirectTo: window.location.origin + (redirect || "/"),
+        redirectTo: window.location.origin + import.meta.env.BASE_URL + (redirect ? redirect.replace(/^\//, "") : ""),
       },
     });
   }
