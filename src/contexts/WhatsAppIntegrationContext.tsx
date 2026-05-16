@@ -236,7 +236,6 @@ export function WhatsAppIntegrationProvider({
           override_default_response_type: true,
           extras: {
             setup: {},
-            featureType: "whatsapp_business_app_onboarding", // Coexistence
             sessionInfoVersion: "3", // Required for receiving embedded signup events
           },
         },
